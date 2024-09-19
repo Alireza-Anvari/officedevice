@@ -1,0 +1,112 @@
+.showFixedNavbar{
+    position: fixed !important;
+    animation: showFixedNavbarAnimate 1s forwards 1;
+    background-color: #f0ffff;
+    top: -80px;
+    box-shadow:0 0 .5rem .1rem rgba(0,0,0,.5);
+ 
+}
+@keyframes showFixedNavbarAnimate {
+    from{}
+    to{    position: fixed !important;top: 0px;}
+    
+}
+.activeDarkModeClass{
+    left: 50%;
+animation:activeDarkModeClassAnimate .2s forwards 1;
+}
+
+@keyframes activeDarkModeClassAnimate {
+    from{ }
+    to{left: 0%}
+    
+}
+.deActiveDarkModeClass{
+    /* right: 50% !important; */
+    left: 0;
+animation:deActiveDarkModeClassAnimate 2s forwards 1;
+}
+
+@keyframes deActiveDarkModeClassAnimate {
+    from{ }
+    to{left: 50% }
+    
+}
+
+.showAccordionClass{
+    display: flex;
+    flex-direction: column;
+    /* justify-center: start; */
+    position: absolute;
+    width: 50%;;
+    height: 0;
+    top: 0px;
+    right: 0%;
+    z-index: 40;
+    /* padding-top: 70px; */
+    background-color: #f0ffff;
+    animation:showAccordionClassAnimate .8s forwards 1;
+}
+
+@keyframes showAccordionClassAnimate {
+    from{ }
+    to{right: 0% ;height: 100vh;}
+    
+}
+
+.showAccordionContent{
+    /* visibility: visible; */
+
+    /* transition-delay: 1s; */
+   
+    animation:showAccordionContentAnimate .5s forwards .3s 1;
+
+
+}
+
+@keyframes showAccordionContentAnimate {
+    from{ }
+    to{ opacity: 1;}
+    
+}
+
+.activeMenuItem{
+    position: relative;
+    /* top: 0; */
+    /* right: 0;
+    width: 0;
+    height: 0;
+    /* border-bottom: 0px solid black; */
+    /* animation:activeMenuItemAnimate .5s forwards 0s 1; */
+    /* background: red; */
+    /* z-index: 50; */ 
+}
+
+.activeMenuItem:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+        animation:activeMenuItemAnimate .6s forwards 0s 1;
+    /* top: 0; */
+    /* right: 0;
+    width: 0;
+    height: 0;
+    /* border-bottom: 0px solid black; */
+    /* animation:activeMenuItemAnimate .5s forwards 0s 1; */
+    background: white;
+    z-index: -1; 
+}
+
+
+@keyframes activeMenuItemAnimate {
+    from{ }
+    to{    background: #2ecfc0; ;}
+    
+}
+
+/* .showAccordionContent ul li:nth-child(1)> a{
+    border-top: 1px solid black;
+} */

@@ -1,0 +1,12 @@
+.modal{
+    /* top: 0 !important; */
+    /* top: -100%; */
+  /* padding: 50px 0; */
+    animation: modalAnimation .5s forwards 1;
+ 
+}
+@keyframes modalAnimation {
+    from{top: -100%;}
+    to{top: 0 ;}
+    
+}
